@@ -8,7 +8,7 @@ The fan can be controlled via a potentiometer. Use a 24V, 2A power adapter. Turn
 
  ## Technical description
 A 120mm 24V PC fan is used where the RPM is controlled via the PWM signal. A 555 generates the PWM signal. The PWM signal may not exceed 5V as it will damage the fan. The tacho of the fan is not used.
-A more filters to the box, but keep in mind that by every filter the suction of the air will be reduced.
+A more filters to the box, but keep in mind that by every filter the suction of the air will be reduced. The 555 will generate a 1kHz signal. This is not optimal as Noctua describes to use a 25kHz signal, but works fine.
 
 PWM info: https://circuitdigest.com/fullimage?i=circuitdiagram/PWM-generation-using-555-timer-IC-circuit-diagram.png
 
