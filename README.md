@@ -1,83 +1,68 @@
-# ..
-..
+# Soldering fume extractor
+
+<img src="Images/Soldering fan 01.jpg" alt="drawing" width="200"/>
 
 ## Description and operation instructions
-..
+Fumes which might be hazzourdus may be released during soldering. I therefor created a modular fume suction box. It can be used with active carbon, Hepa or any other filters.
+The fan can be controlled via a potentiometer. Use a 24V, 2A power adapter. Turn the fan on via the switch. A green LED will turn on.
 
  ## Technical description
-.
+A 120mm 24V PC fan is used where the RPM is controlled via the PWM signal. A 555 generates the PWM signal. The PWM signal may not exceed 5V as it will damage the fan. The tacho of the fan is not used.
+A more filters to the box, but keep in mind that by every filter the suction of the air will be reduced.
+
+PWM info: https://circuitdigest.com/fullimage?i=circuitdiagram/PWM-generation-using-555-timer-IC-circuit-diagram.png
 
 ### Parts
-1 x NodeMCU
+1 x Noctua NF-F12 industrialPPC-24V-3000 SP IP67
+PLA filament
+3 x 2-12mm screw
+2 x 2,6-8mmm srew
+4 x 85mm M4 bolt
+4 x M4 cnut
+Some wires
 
-<img src="Images/ESP8266_NodeMCU.jpg" alt="drawing" width="500"/>
+1 x 24V PWM fan
+<img src="Images/Noctua NF-F12 industrialPPC-24V-3000 SP IP67.png" alt="drawing" width="500"/>
 
-1 x Relay LY2N-J
+1 x 555
 
-<img src="Images/LY2N-J_Relay.jpg" alt="drawing" width="150"/>
+<img src="Images/555.png" alt="drawing" width="150"/>
 
-1 x Relay socket PTF08A
+2 x 1N4148 Diode
 
-<img src="Images/PTF08A_Socket.jpg" alt="drawing" width="200"/>
+<img src="Images/1N4148.png" alt="drawing" width="200"/>
 
-Relay socket pinout
+1 x 5,5 x 2,1 mm DC power plug
 
-<img src="Images/Relay_PTF08A_Socket_pinout.jpg" alt="drawing" width="200"/>
+<img src="Images/5.5 x 2.1mm power socket.png" alt="drawing" width="200"/>
 
-1 x 10k resistor as pull down resistor
-
+1 x 10k Potentiometer
+1 x 1k Resistor
+1 x 100nF ceramic capacitor
+1 x 7805 Voltage regulator
+1 x switch
+1 x 4k7 resistor
+1 x 200k potentiometer
+1 x 3mm green LED 
 
 ### Schematic overview
-<img src="Images/Schematic_overview.jpg" alt="drawing" width="500"/>
+<img src="Images/Schematic_overview.png" alt="drawing" width="500"/>
  
-•	Connect the 230V side of the relay according to the installation instructions of the boilerNodeMCU with. See the relay socker pinout below on how to connect.
 
-•	Connect the relay contact to the 3,3V of the NodeMCU and the other side to D6.
+## 3D print parts
+00 Soldering fan 01.3mf - contains all parts
+Print in PLA and use support for the following prints
+- Fan holder 05
+- Electronics box
 
-•	Connect the 10k resistor to D6 and to GND to use it as a pull down resistor.
+<img src="Images/Soldering fan 02.jpg" alt="drawing" width="200"/>
 
-### ESPEasy installation
-See the instructions in 'Arduino projects and programming' (not listed here)
+<img src="Images/Soldering fan 03.jpg" alt="drawing" width="200"/>
 
+<img src="Images/Soldering fan 04.jpg" alt="drawing" width="200"/>
 
-### ESPEasy Configuration
-Check the screenshots for the configuration.
+<img src="Images/Soldering fan 05.jpg" alt="drawing" width="200"/>
 
-![ESPEasy Config](Images/ESPEasy_Config.jpg)
+### Mounting the fan
+Guide the fan cable around the fan and position it into the 3D printed fan holder
 
-![ESPEasy Controller](Images/ESPEasy_Controller.jpg)
-
-![ESPEasy Devices](Images/ESPEasy_Devices.jpg)
-
-Pay attention to the Pullup and inverse as there were issues even with the external pulldown resistor.
-Additionally when using relais make sure to set a debounce value to make sure that the contacts of the relais don't mess with the state.
-![ESPEasy Devices ESPEasy_Switch](Images/ESPEasy_on_off.jpg)
-
-### Interface
-#### Home Assistant
-Home Assistant is connected via the MQTT broker.
-
-### Testing
-.
-
-### Information
-- [Rules syntax](https://espeasy.readthedocs.io/en/latest/Rules/Rules.html)
-
-Generic
-- [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
-
-
-### Problems
-..
-
-### Wishlist
-..
-
-
-### Code
-#### Rules Set 1 without annotation
-
-#### Rules Set 1 including annotation
-```
-..
-```
