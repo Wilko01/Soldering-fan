@@ -1,6 +1,8 @@
 # Soldering fume extractor
 
-<img src="Images/Soldering fan 01.jpg" alt="drawing" width="200"/>
+<img src="Images/Soldering fan 03.jpg" alt="drawing" width="200"/>
+
+<img src="Images/Soldering fan 02.jpg" alt="drawing" width="200"/>
 
 ## Description and operation instructions
 Fumes which might be hazzourdus may be released during soldering. I therefor created a modular fume suction box. It can be used with active carbon, Hepa or any other filters.
@@ -56,14 +58,17 @@ Print in PLA and use support for the following prints
 - Fan holder 05
 - Electronics box
 
-<img src="Images/Soldering fan 02.jpg" alt="drawing" width="200"/>
-
-<img src="Images/Soldering fan 03.jpg" alt="drawing" width="200"/>
-
 <img src="Images/Soldering fan 04.jpg" alt="drawing" width="200"/>
 
 <img src="Images/Soldering fan 05.jpg" alt="drawing" width="200"/>
 
+<img src="Images/Soldering fan 06.jpg" alt="drawing" width="200"/>
+
+<img src="Images/Soldering fan 08.jpg" alt="drawing" width="200"/>
+
+<img src="Images/Soldering fan 09.jpg" alt="drawing" width="200"/>
+
 ### Mounting the fan
 Guide the fan cable around the fan and position it into the 3D printed fan holder
 
+<img src="Images/Soldering fan 07.jpg" alt="drawing" width="200"/>
