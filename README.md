@@ -22,6 +22,7 @@ PLA filament
 Some wires
 
 1 x 24V PWM fan
+
 <img src="Images/Noctua NF-F12 industrialPPC-24V-3000 SP IP67.png" alt="drawing" width="500"/>
 
 1 x 555
