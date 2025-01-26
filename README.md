@@ -69,6 +69,6 @@ Print in PLA and use support for the following prints
 <img src="Images/Soldering fan 09.jpg" alt="drawing" width="200"/>
 
 ### Mounting the fan
-Guide the fan cable around the fan and position it into the 3D printed fan holder
+Guide the fan cable around the fan and position it into the 3D printed fan holder 
 
 <img src="Images/Soldering fan 07.jpg" alt="drawing" width="200"/>
